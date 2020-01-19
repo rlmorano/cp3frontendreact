@@ -666,3 +666,8 @@
 .card-register {
   background-color: black !important;
 }
+
+.footer-custom {
+  background-color: black !important;
+  color: goldenrod;
+}
