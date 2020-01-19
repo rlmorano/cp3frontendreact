@@ -14,9 +14,6 @@ import Gallery from "pagesections/Gallery";
 import AboutUs from "pagesections/AboutUs";
 import Team from "pagesections/Team";
 import ContactUs from "pagesections/ContactUs";
-import TattooGuide from "pagesections/TattooGuide";
-
-import BookingPage from 'screens/BookingPage';
 
 
 
@@ -38,7 +35,6 @@ function Home() {
         <Services />
         <Gallery />
         <AboutUs />
-        <TattooGuide />
         <Team />
         <ContactUs />
       </div>

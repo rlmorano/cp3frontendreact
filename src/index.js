@@ -21,6 +21,9 @@ import LogInRegisterRouter from 'screens/LogInRegisterRouter'
 // others
 import AuthState from 'context/auth/AuthState';
 // import PrivateRoute from 'components/PrivateRoute';
+import TattooGuide from "pagesections/TattooGuide";
+
+
 
 ReactDOM.render(
   <AuthState>
@@ -34,6 +37,8 @@ ReactDOM.render(
         <Route path='/booking' exact component={BookingPage} />
         <Route path='/customer' exact component={CustomerPage} />
         <Route path='/admin' exact component={AdminPage} />
+        <Route path='/tattooguide' exact component={TattooGuide} />
+
       </Switch>
     </BrowserRouter>
   </AuthState>,

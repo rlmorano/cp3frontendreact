@@ -66,8 +66,13 @@ function SolidNavBar() {
         >
           <Nav navbar>
             <NavItem>
+              <NavLink to='/tattooguide' tag={Link}>
+                <h5 className="solid-nav"><strong><u>Tattoo Pointers</u></strong></h5>
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <NavLink to='/home' tag={Link}>
-                <h6 className="solid-nav">HOME</h6>
+                <h5 className="solid-nav">HOME</h5>
               </NavLink>
             </NavItem>
             {isAuthenticated ? (
@@ -75,12 +80,12 @@ function SolidNavBar() {
                 {user.email === 'patpatin@gmail.com' ? (
                   <NavItem>
                     <NavLink to='/booking' tag={Link} >
-                      <h6 className="solid-nav">BOOK A SESSION</h6>
+                      <h5 className="solid-nav">BOOK A SESSION</h5>
                     </NavLink>
                   </NavItem>) :
                   (<NavItem>
                     <NavLink to='/booking' tag={Link} >
-                      <h6 className="solid-nav">BOOK A SESSION</h6>
+                      <h5 className="solid-nav">BOOK A SESSION</h5>
                     </NavLink>
                   </NavItem>)}
               </>
@@ -88,36 +93,36 @@ function SolidNavBar() {
                 <>
                   <NavItem>
                     <NavLink to='/router' tag={Link}>
-                      <h6 className="solid-nav">BOOK A SESSION</h6>
+                      <h5 className="solid-nav">BOOK A SESSION</h5>
                     </NavLink>
                   </NavItem>
                 </>
               )}
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav>
-                <h6 className="solid-nav">My Account</h6>
+                <h5 className="solid-nav">My Account</h5>
               </DropdownToggle>
               <DropdownMenu right>
                 {isAuthenticated ? (
                   <>
                     {user.email === 'patpatin@gmail.com' ? (<DropdownItem to='/admin' tag={Link}>
-                      <h6 className="solid-nav">ADMIN</h6>
+                      <h5 className="solid-nav">ADMIN</h5>
                     </DropdownItem>) : (<DropdownItem to='/customer' tag={Link}>
-                      <h6 className="solid-nav">BOOKINGS</h6>
+                      <h5 className="solid-nav">BOOKINGS</h5>
                     </DropdownItem>)}
 
 
                     <DropdownItem onClick={() => logoutUser()} tag={Link}>
-                      <h6 className="solid-nav">LOGOUT</h6>
+                      <h5 className="solid-nav">LOGOUT</h5>
                     </DropdownItem>
                   </>
                 ) : (
                     <>
                       <DropdownItem to='/login' tag={Link}>
-                        <h6 className="solid-nav">LOGIN</h6>
+                        <h5 className="solid-nav">LOGIN</h5>
                       </DropdownItem>
                       <DropdownItem to='/register' tag={Link}>
-                        <h6 className="solid-nav">REGISTER</h6>
+                        <h5 className="solid-nav">REGISTER</h5>
                       </DropdownItem>
                     </>
                   )}

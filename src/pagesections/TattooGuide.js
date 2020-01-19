@@ -2,11 +2,16 @@ import React from "react";
 
 // reactstrap components
 import { Container, Row, Col, } from "reactstrap";
+import SolidNavBar from 'components/Navbars/SolidNavBar';
+import Footer from "components/Footers/Footer.js";
+
+
 
 function Services() {
   return (
     <>
-      <div className="section text-center section-dark" id="service">
+      <SolidNavBar />
+      <div className="section text-center section-dark mt-5" id="service">
         <Container>
           <Row>
             <Col lg="12">
@@ -45,6 +50,7 @@ function Services() {
           </Row>
         </Container>
       </div>
+      <Footer />
     </>
   );
 }
